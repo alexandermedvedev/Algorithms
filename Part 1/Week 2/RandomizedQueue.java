@@ -1,5 +1,3 @@
-package com.company;
-
 /*
  Randomized queue. A randomized queue is similar to a stack or queue, except that the item removed is chosen uniformly at random
     from items in the data structure. Create a generic data type RandomizedQueue that implements the following API:
@@ -9,9 +7,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
-    Item[] elem;
-    int size;
-    int count;
+    private Item[] elem;
+    private int size;
+    private int count;
 
     public RandomizedQueue() {                // construct an empty randomized queue
         size = 2;
